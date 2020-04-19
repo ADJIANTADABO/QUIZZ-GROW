@@ -31,6 +31,7 @@
 
         body {
             background-color: #e1e3e7;
+           
         }
 
         button {
@@ -48,12 +49,12 @@
             width: 100%;
             display: flex;
             margin: auto;
-            height: 50%;
+            /* height: 50%; */
 
         }
 
         #nav {
-            height: 200%;
+            height: 150%;
 
         }
 
@@ -73,7 +74,7 @@
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="nav-link" href="index.html"><img src="images/growacademy (1).png" alt="" height="30%"></a>
+        <a class="nav-link" href="index.html"><img src="images/growacademy (1).png" alt="" height="50px"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -103,7 +104,7 @@
         <!-- <h3  class="titre" id="bordel">1) C'EST QUOI L'INTERNET ?<br></h3>  -->
 
         <section class="section1 container" id="question1">
-            <div class="card col-xs-12 col-sm-12 col-md-12 ">
+            <div class="card col-xs-6 col-sm-12 col-md-12 ">
                 <div class="card-header" style="background-color:#FF4080;color:white">
 
                     <h3 class="titre" id="bordel">1) COMMENT DÉFINISSEZ VOUS L'INTERNET ?<br></h3>
@@ -111,54 +112,64 @@
                 </div>
                 <br>
 
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">1</span> /4</p> <br>
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">1</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/internet.png" class="col-md-6" alt="" height="50%" width="60%">
+                        <img src="images/.png" class="col-md-1" alt="" height="50%" width="60%">
 
+                        <img src="images/Internet.png" class="col-md-4" alt="" height="50%" width="60%">
+
+                        <img src="images/.png" class="col-md-1" alt="" height="50%" width="60%">
 
                         <div class="col-md-6 quartier">
                             <div>
-                                <a href="#" onclick="bad1()" id="qu">
+                                <a href="#" onclick="bad('question1','question2')" id="qu">
                                     <p class="q">Un réseau téléphonique permettant de relier les personnes</p>
                                 </a>
-                                <a href="#" onclick="good1()" id="qu">
+                                <a href="#" onclick="good('question1','question2')" id="qu">
                                     <p class="q">Un réseau mondial permettant de connecter tous les ordinateurs entre
                                         eux
                                     </p>
                                 </a>
-                                <a href="#" onclick="bad1()" id="qu">
+                                <a href="#" onclick="bad('question1','question2')" id="qu">
                                     <p class="q">un réseau mobile</p>
                                 </a>
                             </div>
                         </div>
+                        
+                    </div>
+                    <div class="restart">
+                        <br><br>
                     </div>
                 </div>
         </section>
 
         <section class="section2  animated bounceInLeft container" id="question2">
-            <div class="card col-xs-12 col-sm-12 col-md-12 ">
+            <div class="card col-xs-6 col-sm-12 col-md-12 ">
                 <div class="card-header" style="background-color:#FF4080;color:white">
 
                     <h3 class="titre" id="bordel">2) COMMENT DÉFINISSEZ VOUS UN NAVIGATEUR WEB ?<br></h3>
                 </div>
                 <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">2</span> /4</p> <br>
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">2</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-6" alt="">
+                        <img src="images/.png" class="col-md-1" alt="">
+
+                        <img src="images/Moteur.png" class="col-md-4" alt="">
+                        <img src="images/.png" class="col-md-1" alt="">
 
                         <div class="col-md-6">
                             <!-- <div class="quartier2"> -->
-                            <a href="#" onclick="bad2()" id="qu">
+                            <a href="#" onclick="bad('question2','question3')" id="qu">
                                 <p class="q">Un périphérique pour Internet</p>
                             </a>
                             <br>
-                            <a onclick="bad2()" href="#" id="qu">
+                            <a onclick="bad('question2','question3')" href="#" id="qu">
                                 <p class="q">Une personne qui nous assiste sur Internet</p>
                             </a>
                             <br>
-                            <a onclick="good2()" href="#" id="qu">
+                            <a onclick="good('question2','question3')" href="#" id="qu">
                                 <p class="q">Un logiciel qui permet d'aller sur Internet</p>
                             </a>
                             <!-- </div> -->
@@ -168,11 +179,10 @@
                         <button onclick="recommancer()" class="btn btn-lg  oui"><span style="color:white">
                                 <a>RECOMMENCEZ!!</a> </span> </button>
                     </div>
-                    <br>
+                    <!-- <br> -->
                 </div>
 
         </section>
-        <br><br>
 
         <section class="section3 animated bounceInLeft container" id="question3">
             <div class="card col-xs-12 col-sm-12 col-md-12 ">
@@ -181,21 +191,23 @@
                     <h3 class="titre" id="bordel"> 3) PARMIS CES IMAGES LEQUEL N'EST PAS UN NAVIGATEUR ?<br></h3>
                 </div>
                 <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">3</span> /4</p> <br>
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">3</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-5" alt="">
+                        <img src="images/" class="col-md-1" alt="">
 
-                        <div class="col-md-1"><br></div>
+                        <img src="images/Personnage 8.png" class="col-md-4" alt="">
+                        <img src="images/" class="col-md-1" alt="">
+
                         <div class="col-md-6">
                             <div class="quartier3">
-                                <a onclick="good3()" href="#" id="qu">
+                                <a onclick="good('question3','question4')" href="#" id="qu">
                                     <p class="q">Image 1</p>
                                 </a><br>
-                                <a onclick="bad3()" href="#" id="qu">
+                                <a onclick="bad('question3','question4')" href="#" id="qu">
                                     <p class="q">Image 2</p>
                                 </a><br>
-                                <a onclick="bad3()" href="#" id="qu">
+                                <a onclick="bad('question3','question4')" href="#" id="qu">
                                     <p class="q">Image 3</p>
                                 </a>
                             </div>
@@ -206,7 +218,7 @@
                                 <a>RECOMMENCEZ!!</a> </span> </button>
                     </div>
                 </div>
-                <br>
+             
         </section>
 
         <section class="section4 animated bounceInLeft container" id="question4">
@@ -215,25 +227,24 @@
 
                     <h3 class="titre" id="bordel"> 4) A quoi sert un navigateur Internet ?<br></h3>
                 </div>
-                <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">4</span> /4</p> <br>
+                <!-- <br> -->
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">4</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-6" alt="">
-                        <!-- <div class="col-md-6">
-                        <div class="image4">
-                            <img src="images/parcelle assainie.png"  width="430" height="280" alt="">       
-                        </div>
-                    </div> -->
+                        <img src="images/P" class="col-md-1" alt="">
+                        <img src="images/Personnage 8.png" class="col-md-4" alt="">
+
+                        <img src="images/" class="col-md-1" alt="">
+                       
                         <div class="col-md-6">
                             <div class="quartier4">
-                                <a onclick="bad4()" href="#" id="qu">
+                                <a onclick="bad('question4','question5')" href="#" id="qu">
                                     <p class="q">À recharger la batterie de son ordinateur</p>
                                 </a><br>
-                                <a href="#" onclick="good4()" id="qu">
+                                <a href="#" onclick="good('question4','question5')" id="qu">
                                     <p class="q">À consulter et afficher le contenu des sites Web</p>
                                 </a><br>
-                                <a href="#" onclick="bad4()" id="qu">
+                                <a href="#" onclick="bad('question4','question5')" id="qu">
                                     <p class="q">À guider un navire vers son port de destination</p>
                                 </a>
                             </div>
@@ -245,35 +256,33 @@
                             <a>RECOMMENCEZ!!</a>
                         </span> </button>
                 </div>
-                <br>
+                <!-- <br> -->
         </section>
-        <br><br>
+        <!-- <br><br> -->
         <section class="section5 animated bounceInLeft container" id="question5">
             <div class="card col-xs-12 col-sm-12 col-md-12 ">
                 <div class="card-header" style="background-color:#FF4080;color:white">
 
                     <h3 class="titre" id="bordel"> 5) Quel est le rôle d'un moteur de recherche ?<br></h3>
-                </div> <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">4</span> /4</p> <br>
+                </div> 
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">5</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-6" alt="">
-                        <!-- <div class="col-md-6">
-                        <div class="image4">
-                            <img src="images/parcelle assainie.png"  width="430" height="280" alt="">       
-                        </div>
-                    </div> -->
+                        <img src="images/" class="col-md-1" alt="">
+                        <img src="images/Personnage 8.png" class="col-md-4" alt="">
+
+                        <img src="images" class="col-md-1" alt="">
+                      
                         <div class="col-md-6">
                             <div class="quartier5">
-                                <a onclick="bad5()" href="#" id="qu">
-                                    <p class="q">Envoyer un courrier électronique au service de recherche de la police
+                                <a onclick="bad('question5','question6')" href="#" id="qu">
+                                    <p class="q"> au service de recherche de la police
                                     </p>
                                 </a><br>
-                                <a href="#" onclick="good5()" id="qu">
-                                    <p class="q">Permettre de poser une question et d'obtenir les résultats les plus
-                                        pertinents proposés par les sites Web</p>
+                                <a href="#" onclick="good('question5','question6')" id="qu">
+                                    <p class="q">Permettre de poser une question et d'obtenir les résultats les plus Web</p>
                                 </a><br>
-                                <a href="#" onclick="bad5()" id="qu">
+                                <a href="#" onclick="bad('question5','question6')" id="qu">
                                     <p class="q">propulser une voiture électrique</p>
                                 </a>
                             </div>
@@ -285,31 +294,34 @@
                             <a>RECOMMENCEZ!!</a>
                         </span> </button>
                 </div>
-                <br>
+              
         </section>
-        <br><br>
+        <!-- <br><br> -->
 
         <section class="section6  animated bounceInLeft container" id="question6">
             <div class="card col-xs-12 col-sm-12 col-md-12 ">
                 <div class="card-header" style="background-color:#FF4080;color:white">
 
                     <h3 class="titre" id="bordel">6) C'est quoi Html ?<br></h3>
-                </div> <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">2</span> /4</p> <br>
+                </div> 
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">6</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-6" alt="">
+                        <img src="images" class="col-md-1" alt="">
+                        <img src="images/Personnage 8.png" class="col-md-4" alt="">
+
+                        <img src="images" class="col-md-1" alt="">
 
                         <div class="col-md-6">
                             <!-- <div class="quartier2"> -->
-                            <a href="#" onclick="bad6()" id="qu">
-                                <p class="q">Nous permet de naviguer sur le web</p>
+                            <a href="#" onclick="bad('question6','question7')" id="qu">
+                                <p class="q">Nous permet de n sur le web</p>
                             </a><br>
-                            <a onclick="bad6()" href="#" id="qu">
-                                <p class="q">Nous permet de creer des contenu videos</p>
+                            <a onclick="bad('question6','question7')" href="#" id="qu">
+                                <p class="q">Nous pecontenu videos</p>
                             </a><br>
-                            <a onclick="good6()" href="#" id="qu">
-                                <p class="q">Nous permet de mettre tout type de texte dans nos page web</p>
+                            <a onclick="good('question6','question7')" href="#" id="qu">
+                                <p class="q"> de mettre tout type de texte dans nos page web</p>
                             </a>
                             <!-- </div> -->
                         </div>
@@ -322,28 +334,31 @@
                 </div>
 
         </section>
-        <br><br>
+        <!-- <br><br> -->
 
         <section class="section7  animated bounceInLeft container" id="question7">
             <div class="card col-xs-12 col-sm-12 col-md-12 ">
                 <div class="card-header" style="background-color:#FF4080;color:white">
 
                     <h3 class="titre" id="bordel">7) C'est quoi Css ?<br></h3>
-                </div> <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">2</span> /4</p> <br>
+                </div> 
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">7</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-6" alt="">
+                        <img src="image" class="col-md-1" alt="">
+                        <img src="images/Personnage 8.png" class="col-md-4" alt="">
+
+                        <img src="images" class="col-md-1" alt="">
 
                         <div class="col-md-6">
                             <!-- <div class="quartier2"> -->
-                            <a href="#" onclick="bad7()" id="qu">
+                            <a href="#" onclick="bad('question7','question8')" id="qu">
                                 <p class="q">Un outil pour dessiner</p>
                             </a><br>
-                            <a onclick="bad7()" href="#" id="qu">
+                            <a onclick="bad('question7','question8')" href="#" id="qu">
                                 <p class="q">C'est pour faire la mise en forme et style sur le pages html</p>
                             </a><br>
-                            <a onclick="good7()" href="#" id="qu">
+                            <a onclick="good('question7','question8')" href="#" id="qu">
                                 <p class="q">Colorier les pages web</p>
                             </a>
                             <!-- </div> -->
@@ -353,33 +368,36 @@
                         <button onclick="recommancer()" class="btn btn-lg  oui"><span style="color:white">
                                 <a>RECOMMENCEZ!!</a> </span> </button>
                     </div>
-                    <br>
+                
                 </div>
 
         </section>
-        <br><br>
+        <!-- <br><br>
        
-        <br><br>
+        <br><br> -->
         <section class="section8  animated bounceInLeft container" id="question8">
             <div class="card col-xs-12 col-sm-12 col-md-12 ">
                 <div class="card-header" style="background-color:#FF4080;color:white">
 
-                    <h3 class="titre" id="bordel">7) C'est quoi Css ?<br></h3>
-                </div> <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">2</span> /4</p> <br>
+                    <h3 class="titre" id="bordel">8) C'est quoi Css ?<br></h3>
+                </div> 
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">8</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-6" alt="">
+                        <img src="images" class="col-md-1" alt="">
+                        <img src="images/Personnage 8.png" class="col-md-4" alt="">
+
+                        <img src="images" class="col-md-1" alt="">
 
                         <div class="col-md-6">
                             <!-- <div class="quartier2"> -->
-                            <a href="#" onclick="bad8()" id="qu">
+                            <a href="#" onclick="bad('question8','question9')" id="qu">
                                 <p class="q">Un outil pour dessiner</p>
                             </a><br>
-                            <a onclick="bad8()" href="#" id="qu">
+                            <a onclick="bad('question8','question9')" href="#" id="qu">
                                 <p class="q">C'est pour faire la mise en forme et style sur le pages html</p>
                             </a><br>
-                            <a onclick="good8()" href="#" id="qu">
+                            <a onclick="good('question8','question9')" href="#" id="qu">
                                 <p class="q">Colorier les pages web</p>
                             </a>
                             <!-- </div> -->
@@ -389,33 +407,36 @@
                         <button onclick="recommancer()" class="btn btn-lg  oui"><span style="color:white">
                                 <a>RECOMMENCEZ!!</a> </span> </button>
                     </div>
-                    <br>
+        
                 </div>
 
         </section>
-        <br><br>
+        <!-- <br><br> -->
         <section class="section9  animated bounceInLeft container" id="question9">
             <div class="card col-xs-12 col-sm-12 col-md-12 ">
                 <div class="card-header" style="background-color:#FF4080;color:white">
 
-                    <h3 class="titre" id="bordel">8) Quels est le rôle d'un navigateur?<br></h3>
-                </div> <br>
-                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">2</span> /4</p> <br>
+                    <h3 class="titre" id="bordel">9) Quels est le rôle d'un navigateur?<br></h3>
+                </div> 
+                <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">9</span> /10</p> <br>
                 <div class="container">
                     <div class="row">
-                        <img src="images/Personnage 8.png" class="col-md-6" alt="">
+                        <img src="images/Personnage 8.png" class="col-md-1" alt="">
+                        <img src="images/Personnage 8.png" class="col-md-4" alt="">
+
+                        <img src="images/Personnage 8.png" class="col-md-1" alt="">
 
                         <div class="col-md-6">
                             <!-- <div class="quartier2"> -->
-                            <a href="#" onclick="bad9()" id="qu">
+                            <a href="#" onclick="bad('question9','question10')" id="qu">
                                 <p class="q">Afficher notre page html</p>
                             </a>
                             <br>
-                            <a onclick="bad9()" href="#" id="qu">
+                            <a onclick="bad('question9','question10')" href="#" id="qu">
                                 <p class="q">Acheter en ligne</p>
                             </a>
                             <br>
-                            <a onclick="good9()" href="#" id="qu">
+                            <a onclick="good('question9','question10')" href="#" id="qu">
                                 <p class="q">Ecrire du code</p>
                             </a>
                             <!-- </div> -->
@@ -425,29 +446,29 @@
                         <button onclick="recommancer()" class="btn btn-lg  oui"><span style="color:white">
                                 <a>RECOMMENCEZ!!</a> </span> </button>
                     </div>
-                    <br>
+                    <!-- <br> -->
                 </div>
 </section>
 <section class="section10  animated bounceInLeft container" id="question10">
     <div class="card col-xs-12 col-sm-12 col-md-12 ">
         <div class="card-header" style="background-color:#FF4080;color:white">
 
-            <h3 class="titre" id="bordel">7) C'est quoi Css ?<br></h3>
-        </div> <br>
-        <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">2</span> /4</p> <br>
+            <h3 class="titre" id="bordel">10) C'est quoi Css ?<br></h3>
+        </div> 
+        <p class="titre" style="font-size: 10px;">Question <span style="color: #FF4080">10</span> /10</p> <br>
         <div class="container">
             <div class="row">
                 <img src="images/Personnage 8.png" class="col-md-6" alt="">
 
                 <div class="col-md-6">
                     <!-- <div class="quartier2"> -->
-                    <a href="#" onclick="bad10()" id="qu">
+                    <a href="#" onclick="badend('question10','avantresultat')" id="qu">
                         <p class="q">Un outil pour dessiner</p>
                     </a><br>
-                    <a onclick="bad10()" href="#" id="qu">
+                    <a onclick="badend('question10','avantresultat')" href="#" id="qu">
                         <p class="q">C'est pour faire la mise en forme et style sur le pages html</p>
                     </a><br>
-                    <a onclick="good10()" href="#" id="qu">
+                    <a onclick="goodend('question10','avantresultat')" href="#" id="qu">
                         <p class="q">Colorier les pages web</p>
                     </a>
                     <!-- </div> -->
@@ -457,7 +478,7 @@
                 <button onclick="recommancer()" class="btn btn-lg  oui"><span style="color:white">
                         <a>RECOMMENCEZ!!</a> </span> </button>
             </div>
-            <br>
+            <!-- <br> -->
         </div>
 
 </section>
@@ -499,8 +520,9 @@
                                 style="color:#FF4080;">NON, MERCI</strong></button></a>
 
                     <br> <br>
+                    <br>
 
-
+<br>
                 </div>
 
 
@@ -778,8 +800,8 @@
 
 
 
-                                <br> <br>
-                                <br>
+                                <!-- <br> <br>
+                                <br> -->
                             </div>
 
 
@@ -819,10 +841,10 @@
                                 <div class="col-md-1 animated bounceIn"> <a
                                         href="https://api.whatsapp.com/send?text=http://hellogrow.epizy.com/"><img
                                             src="images/whatsapp (1).png" alt=""></a></div>
-
+<!-- 
                                 <div class="col-md-1"></div>
 
-                            </div>
+                            </div> -->
 
 
 
@@ -843,23 +865,24 @@
 
 
     </div>
-<br><br>
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/rien.js"></script>
     <script src="js/mobile-detect.js"></script>
+<br>
 
 </body>
 <!-- Footer -->
-<footer class="footer  bg-dark ">
+   <footer class="footer  bg-dark ">
 
-    <!-- Copyright -->
-    <center>
-    <div class="footer-copyright text-center py-3" style="color: #e1e3e7;">© 2020 Copyright: Visitez notre site officiel
-      <a href="https://www.growacademysenegal.com/" style="color: #FF4080;">  www.growacademysenegal.com</a>
-    </div>
-    <!-- Copyright -->
-</center>
-  </footer>
+        <!-- Copyright -->
+        <center>
+            <div class="footer-copyright text-center py-3" style="color: #e1e3e7;">© 2020 Copyright: Visitez notre site officiel
+              <a href="https://www.growacademysenegal.com/" style="color: #FF4080;">  www.growacademysenegal.com</a>
+            </div>
+            <!-- Copyright -->
+        </center>
+          </footer>
   <!-- Footer -->
 </html>

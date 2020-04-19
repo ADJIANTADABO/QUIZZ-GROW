@@ -5,6 +5,12 @@ var fisrtquestion=document.getElementById('question1');
 var secondquestion=document.getElementById('question2');
 var thirdquestion=document.getElementById('question3');
 var fourthquestion=document.getElementById('question4');
+var fivequestion=document.getElementById('question5');
+var sixquestion=document.getElementById('question6');
+var sevenquestion=document.getElementById('question7');
+var heightquestion=document.getElementById('question8');
+var ninequestion=document.getElementById('question9');
+var tenquestion=document.getElementById('question10');
 var avantresultat=document.getElementById('avantresultat');
 var formulaire=document.getElementById('formulaire');
 var apresenregistrement=document.getElementById('apresenregistrement');
@@ -71,6 +77,12 @@ $.getJSON("http://api.db-ip.com/v2/free/self").then(
         secondquestion.style.display="none";
         thirdquestion.style.display="none";
         fourthquestion.style.display="none";
+        fivequestion.style.display="none";
+        sixquestion.style.display="none";
+        sevenquestion.style.display="none";
+        heightquestion.style.display="none";
+        ninequestion.style.display="none";
+        tenquestion.style.display="none";
         avantresultat.style.display="none";
         formulaire.style.display="none";
         apresenregistrement.style.display="none";
@@ -83,83 +95,52 @@ $.getJSON("http://api.db-ip.com/v2/free/self").then(
         repartitionsavebad.style.display="none";
         repartitionsavemoyen.style.disy="none";
         repartitionsavegood.style.dlay="none";
-    function good1(){
-       
-    fisrtquestion.style.display="none";
-    secondquestion.style.display="block";
-    points++;
-    $.get("page/save.php?donner=michemin",function(){
-       
-    })
+
+    function good(x,y) {
+        document.getElementById(x).style.display="none";
+        document.getElementById(y).style.display="block";
+        points++;
+        $.get("page/save.php?donner=michemin",function(){})
     };
-    function bad1(){
-        
-    fisrtquestion.style.display="none";
-    secondquestion.style.display="block";
-    $.get("page/save.php?donner=michemin",function(){
-       
-    })
-    }
-    function good2(){
-    secondquestion.style.display="none";
-    thirdquestion.style.display="block";
-    points++;
+    function bad(x,y) {
+        document.getElementById(x).style.display="none";
+        document.getElementById(y).style.display="block";
+        $.get("page/save.php?donner=michemin",function(){})
+    };
 
+    function goodend(x,y){
+        document.getElementById(x).style.display="none";
+        document.getElementById(y).style.display="block";
+        titrepage.style.display="none";
+        points++;
+        $.get("page/save.php?donner=endgame",function(){})
+        document.getElementById('cpt1').innerHTML=points;
+        document.getElementById('cpt5').innerHTML=points;
+        repartitionscore();
     }
-    function bad2(){
-    secondquestion.style.display="none";
-    thirdquestion.style.display="block";
 
+    function badend(x,y){
+        document.getElementById(x).style.display="none";
+        document.getElementById(y).style.display="block";
+        titrepage.style.display="none";
+        $.get("page/save.php?donner=endgame",function(){})
+        document.getElementById('cpt1').innerHTML=points;
+        document.getElementById('cpt5').innerHTML=points;
+        repartitionscore();
     }
-    function good3(){
-    thirdquestion.style.display="none";
-    fourthquestion.style.display="block";
-    points++;
-    }
-    function bad3(){
-    thirdquestion.style.display="none";
-    fourthquestion.style.display="block";
-    }
-function good4(){
-fourthquestion.style.display="none";
-avantresultat.style.display="block";
-titrepage.style.display="none";
-points++;
-$.get("page/save.php?donner=endgame",function(){
-   
-})
-document.getElementById('cpt1').innerHTML=points;
-// document.getElementById('cpt2').innerHTML=points;
-// document.getElementById('cpt3').innerHTML=points;
-document.getElementById('cpt5').innerHTML=points;
-repartitionscore();
 
-}
-function bad4(){
-fourthquestion.style.display="none";
-avantresultat.style.display="block";
-titrepage.style.display="none";
-$.get("page/save.php?donner=endgame",function(){
-   
-})
-document.getElementById('cpt1').innerHTML=points;
-// document.getElementById('cpt2').innerHTML=points;
-// document.getElementById('cpt3').innerHTML=points;
-document.getElementById('cpt5').innerHTML=points;
-repartitionscore();
-}
-function recommancer(){
-fisrtquestion.style.display="block"
-secondquestion.style.display="none";
-thirdquestion.style.display="none";
-fourthquestion.style.display="none";
-avantresultat.style.display="none";
-formulaire.style.display="none";
-apresenregistrement.style.display="none";
-resultatquestion.style.display="none";
-//vuebonnereponse.style.display="none";
-//linketpartage.style.display="none";
-}
+    function recommancer(){
+        fisrtquestion.style.display="block"
+        secondquestion.style.display="none";
+        thirdquestion.style.display="none";
+        fourthquestion.style.display="none";
+        avantresultat.style.display="none";
+        formulaire.style.display="none";
+        apresenregistrement.style.display="none";
+        resultatquestion.style.display="none";
+    }
+
+
 function jerejoint(){
 formulaire.style.display="block";
 resultatquestion.style.display="none";
